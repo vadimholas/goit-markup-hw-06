@@ -394,8 +394,12 @@ img {
   width: 200px;
   height: 50px;
   padding-left: 28px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-form-footer {
   display: flex;
   align-items: center;
+  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -407,6 +411,10 @@ img {
   border-radius: 4px;
   border: rgba(117, 117, 117, 1);
 }
+.btn-form-footer:focus,
+.btn-form-footer:hover {
+  background-color: var(--accent-text-color);
+}
 .footer-icon-form {
   display: flex;
   align-items: center;
@@ -417,18 +425,16 @@ img {
   align-items: center;
   margin-right: 9px;
 }
-.form-label-footer {
-  border-radius: 4px;
-  margin-right: 9px;
-}
+
 .input-footer {
   padding-left: 16px;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  outline: none;
+  margin-right: 9px;
   background-color: #2f303a;
-
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
@@ -449,6 +455,7 @@ img {
   min-height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
+  padding: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -475,6 +482,22 @@ img {
 .bakcdrop.is-hidden .modal {
   transform: scale(0.1) rotate(180deg);
   transition: transform 1000ms;
+}
+.title-modal {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.title-backdrop {
+}
+.text-form {
+  display: flex;
 }
 /*------------------HERO----------------*/
 .hero {
