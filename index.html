@@ -350,12 +350,12 @@
         </div>
         <div class="footer-form">
         <p class="title-footer">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-   <form class="form-footer">
+   <form class="form-footer" action="#">
      
      <input class="input-footer" type="text" name="maill" placeholder="E-mail">
     
        <button class="btn-form-footer" type="submit">Подписаться
-   <svg class="foter-icon-form" wight="24" height="24">
+   <svg class="foter-icon-form" width="24" height="24">
        <use href="./images/icons.svg#icon-send"></use>
    </svg>
    </button>
@@ -372,24 +372,29 @@
         <use href="./images/icons.svg#icon-close" ></use>
     </svg>
 </button>
-<p class="title-modal">Оставьте свои данные, мы вам перезвоним</p>
-<form>
-    <div>
-    <input class="modal-input" type="text" name="">
-   
+<p class="text-one-modal">Оставьте свои данные, мы вам перезвоним</p>
+<form action="#">
+    <div class="form-fild">
+    <label for="name">Имя</label>  
+     <input class="modal-input" type="text" name="name" id="name">
 </div>
-<div>
-    <input type="text" name="">
-    
+<div class="form-fild">
+    <label for="tel">Телефон</label>
+    <input class="modal-input" type="text" name="tel" id="tel">
 </div>
-<div>
-    <input type="text" name="">
-    
+<div class="form-fild">
+    <label for="maill">Почта</label>
+    <input class="modal-input" type="text" name="maill" id="maiil">
 </div>
-<textarea name="" id="" cols="30" rows="10"></textarea>
-<div class="text-form">
-<p>Соглашаюсь с рассылкой и принимаю</p> 
-<a href="">Условия договора</a>
+<div class="form-fild">
+<label for="comments">Комментарий</label>
+<textarea class="textarea-form" name="comment" id="comment" cols="30" rows="10"></textarea>
+</div>
+<div class="text-form-div">
+<p class="form-text">Соглашаюсь с рассылкой и принимаю<span class="form-span">Условия договора</span></p> 
+</div>
+<div class="btn-div">
+<button class="btn-modal-send" type="submit">Отправить</button>
 </div>
 </form>
 

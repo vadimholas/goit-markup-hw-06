@@ -483,7 +483,7 @@ img {
   transform: scale(0.1) rotate(180deg);
   transition: transform 1000ms;
 }
-.title-modal {
+.text-one-modal {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -493,11 +493,68 @@ img {
   letter-spacing: 0.03em;
 
   color: #212121;
+  margin-bottom: 12px;
 }
-.title-backdrop {
-}
-.text-form {
+
+.text-form-div {
   display: flex;
+  margin-top: 20px;
+}
+.form-span {
+  color: #2196f3;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+.form-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+.textarea-form {
+  width: 448px;
+  height: 120px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.modal-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-fild label {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+.btn-modal-send {
+  width: 200px;
+  height: 50px;
+  border: rgba(117, 117, 117, 1);
+  border-radius: 4px;
+  background-color: var(--accent-text-color);
+  color: var(--primary-fon-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.btn-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
 }
 /*------------------HERO----------------*/
 .hero {
