@@ -368,31 +368,52 @@
 <div  class="bakcdrop is-hidden" data-modal >
 <div class="modal">
 <button type="button" class="modal-close" data-modal-close >
-    <svg width="18" height="18">
+    <svg class="icon-modal" width="18" height="18">
         <use href="./images/icons.svg#icon-close" ></use>
     </svg>
 </button>
 <p class="text-one-modal">Оставьте свои данные, мы вам перезвоним</p>
 <form action="#">
     <div class="form-fild">
-    <label for="name">Имя</label>  
-     <input class="modal-input" type="text" name="name" id="name">
+    <label>Имя
+        <span class="icon-input">
+     <input class="modal-input" type="text" name="name">
+     <svg class="icon-check" width="18" height="18">
+         <use href="./images/icons.svg#icon-person"></use>
+     </svg></span>
+   
+    </label>
 </div>
 <div class="form-fild">
-    <label for="tel">Телефон</label>
-    <input class="modal-input" type="text" name="tel" id="tel">
+    <label>Телефон
+      <span class="icon-input">
+    <input class="modal-input" type="text" name="tel">
+    <svg class="icon-check" width="18" height="18">
+        <use href="./images/icons.svg#icon-phone"></use>
+    </svg></span>
+    
+</label>
 </div>
 <div class="form-fild">
-    <label for="maill">Почта</label>
-    <input class="modal-input" type="text" name="maill" id="maiil">
+    <label>Почта
+        <span class=" icon-input">
+    <input class="modal-input" type="text" name="maill">
+    <svg class="icon-check" width="18" height="18">
+        <use href="./images/icons.svg#icon-email-check"></use>
+    </svg></span>
+</label>
 </div>
 <div class="form-fild">
-<label for="comments">Комментарий</label>
-<textarea class="textarea-form" name="comment" id="comment" cols="30" rows="10"></textarea>
+<label>Комментарий
+<textarea class="textarea-form" name="comment" id="comment" placeholder="Введите текст" cols="30" rows="5"></textarea>
+</label>
 </div>
-<div class="text-form-div">
-<p class="form-text">Соглашаюсь с рассылкой и принимаю<span class="form-span">Условия договора</span></p> 
-</div>
+<label class="label-check">
+   <input class="checkbox" type="checkbox">
+   <span class="check-span"></span>
+<p class="form-text">Соглашаюсь с рассылкой и принимаю</p>
+<a class="form-link" href="">Условия договора </a>
+</label>
 <div class="btn-div">
 <button class="btn-modal-send" type="submit">Отправить</button>
 </div>

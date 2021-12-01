@@ -495,14 +495,39 @@ img {
   color: #212121;
   margin-bottom: 12px;
 }
-
-.text-form-div {
-  display: flex;
-  margin-top: 20px;
+.modal-close:focus {
+  fill: var(--accent-text-color);
+  border-color: var(--accent-text-color);
 }
-.form-span {
+.modal-close:hover {
+  fill: var(--accent-text-color);
+  border-color: var(--accent-text-color);
+}
+
+.label-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check-span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: tomato;
+}
+.form-link {
   color: #2196f3;
-  text-decoration: underline;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   margin-left: 5px;
 }
 .form-text {
@@ -512,7 +537,6 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
   color: #757575;
 }
 .textarea-form {
@@ -521,20 +545,55 @@ img {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding: 16px 12px 16px 12px;
+}
+.textarea-form::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-input:focus ~ .icon-check {
+  fill: var(--accent-text-color);
+}
+.modal-input:hover ~ .icon-check {
+  fill: var(--accent-text-color);
+}
+.modal-input:focus {
+  border-color: var(--accent-text-color);
+  outline: none;
+}
+.modal-input:hover {
+  border-color: var(--accent-text-color);
 }
 .modal-input {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding-left: 40px;
+  margin: 0;
 }
 
+.icon-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-check {
+  position: absolute;
+  left: 0px;
+  align-items: center;
+  margin-left: 12px;
+}
 .form-fild label {
   font-weight: normal;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  margin-bottom: 4px;
 }
 .btn-modal-send {
   width: 200px;
@@ -555,6 +614,9 @@ img {
   align-items: center;
   justify-content: center;
   padding-top: 30px;
+}
+.label-check {
+  margin-top: 20px;
 }
 /*------------------HERO----------------*/
 .hero {
