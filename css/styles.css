@@ -566,7 +566,13 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 16px 12px 16px 12px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.textarea-form:focus,
+.textarea-form:hover {
+  border-color: var(--accent-text-color);
+}
+
 .textarea-form::placeholder {
   font-style: normal;
   font-weight: normal;
