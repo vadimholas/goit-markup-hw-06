@@ -330,11 +330,7 @@ img {
 .contact-footer {
   margin-top: 4px;
 }
-.footer-icon-div {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
+
 .title-footer {
   font-style: normal;
   font-weight: bold;
